@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('empregos', function (Blueprint $table) {
             $table->id();
+            $table->string('cargo');
+            $table->decimal('salario', 10, 2);
             $table->timestamps();
         });
     }
